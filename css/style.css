@@ -1,0 +1,1238 @@
+@charset "utf-8";
+
+/* Fonts */
+
+@font-face {
+	font-family: Roboto;
+	src: url(../fonts/roboto-thin.woff);
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: Roboto;
+	src: url(../fonts/roboto-thinitalic.woff);
+	font-weight: 100;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: Roboto;
+	src: url(../fonts/roboto-light.woff);
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: Roboto;
+	src: url(../fonts/roboto-lightitalic.woff);
+	font-weight: 300;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: Roboto;
+	src: url(../fonts/roboto-regular.woff);
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: Roboto;
+	src: url(../fonts/roboto-italic.woff);
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: Roboto;
+	src: url(../fonts/roboto-medium.woff);
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: Roboto;
+	src: url(../fonts/roboto-mediumitalic.woff);
+	font-weight: 500;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: Roboto;
+	src: url(../fonts/roboto-bold.woff);
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: Roboto;
+	src: url(../fonts/roboto-bolditalic.woff);
+	font-weight: 700;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: Roboto;
+	src: url(../fonts/roboto-black.woff);
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: Roboto;
+	src: url(../fonts/roboto-blackitalic.woff);
+	font-weight: 900;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Playfair Display';
+	src: url(../fonts/playfairdisplay-regular.woff);
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Playfair Display';
+	src: url(../fonts/playfairdisplay-italic.woff);
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Playfair Display';
+	src: url(../fonts/playfairdisplay-bold.woff);
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Playfair Display';
+	src: url(../fonts/playfairdisplay-bolditalic.woff);
+	font-weight: 700;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Playfair Display';
+	src: url(../fonts/playfairdisplay-black.woff);
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Playfair Display';
+	src: url(../fonts/playfairdisplay-blackitalic.woff);
+	font-weight: 900;
+	font-style: italic;
+}
+
+/* Globale Klasser */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+	background: #ffffff;
+	margin: 75px 0 0 0;
+	font-size: 150%;
+	font-family: Roboto;
+	font-weight: normal;
+}
+
+@media only screen and (max-width: 1199px) {
+	body {
+		font-size: 140%;
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	body {
+		font-size: 120%;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	body {
+		font-size: 100%;		
+	}
+}
+
+a {
+	color: #fcbc03;
+	text-decoration: none;
+}
+
+a:hover,
+a:active,
+a:focus {
+	color: #fcbc03;
+	text-decoration: underline;
+}
+
+.form-control:focus {
+  border-color: #fcbc03;
+}
+
+.jumbotron {
+	height: 85vh;
+	border-bottom: 2px solid #fcbc03;
+}
+
+@media only screen and (max-width: 767px) {
+	.jumbotron {
+		height: 50vh;
+		border-bottom: 2px solid #fcbc03;
+	}
+}
+
+.jumbotron p {
+  margin-bottom: auto;
+  font-size: 1em;
+  font-weight: normal;
+}
+
+.jumbotron h1 {
+	color: #fcbc03;
+}
+
+.header-h1 {
+	font-size: 5em;
+}
+
+@media only screen and (max-width: 1199px) {
+	.header-h1 {
+		font-size: 4.7em;
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	.header-h1 {
+		font-size: 4.3em;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.header-h1 {
+		font-size: 4em;
+	}
+}
+
+.header-h4 {
+	font-size: 3em;
+}
+
+@media only screen and (max-width: 1199px) {
+	.header-h4 {
+		font-size: 2.7em;
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	.header-h4 {
+		font-size: 2.3em;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.header-h4 {
+		font-size: 2em;
+	}
+}
+
+.sektion-hr {
+	border: 1px solid #fcbc03;
+}
+
+.sektion-overskrift {
+	top: -2.3em;
+	padding: 0 0.5em;
+	background: #ffffff;
+}
+
+.fadøl-div {
+	max-height: 18em;
+}
+
+@media only screen and (max-width: 991px) {
+	.fadøl-div {
+		max-height: 26em;
+		overflow: scroll;
+	}
+}
+
+.fadøl-iframe {
+	border: none;
+	margin: -1em auto 1em;
+}
+
+.skillelinjer {
+	border-left: 1px solid #cccccc;
+	border-right: 1px solid #cccccc;
+}
+
+@media only screen and (max-width: 991px) {
+	.skillelinjer {
+		border-left: none;
+		border-right: none;
+	}
+}
+
+.playfair-display {
+	font-family: 'Playfair Display';
+}
+
+.fairbar-button {
+	color: #fcbc03;
+	border: 3px solid #fcbc03;
+}
+
+.fairbar-button:hover,
+.fairbar-button:active,
+.fairbar-button:focus {
+	color: #ffffff;
+	border: 3px solid #fcbc03;
+	background: #fcbc03;
+	transition: 0.2s;
+}
+
+.fairbar-button-reverse {
+	color: #ffffff;
+	border: 3px solid #ffffff;
+	background: transparent;
+}
+
+.fairbar-button-reverse:hover,
+.fairbar-button-reverse:active,
+.fairbar-button-reverse:focus {
+	color: #fcbc03;
+	border: 3px solid #fcbc03;
+	background: #ffffff;
+	transition: 0.2s;
+}
+
+.primær {
+	color: #fcbc03;
+}
+
+.background-primær {
+	background: #fcbc03;
+}
+
+.sekundær {
+	color: #aed034;
+}
+
+.lysegrå {
+	color: #cccccc;
+}
+
+.grå {
+	color: #959595;
+}
+
+.mørkegrå {
+	color: #555555;
+}
+
+.hvid {
+	color: #ffffff;
+}
+
+.em-1point1 {
+	font-size: 1.1em;
+}
+
+.em-1point2 {
+	font-size: 1.2em;
+}
+
+.em-1point5 {
+	font-size: 1.5em;
+}
+
+.em-2 {
+	font-size: 2em;
+}
+
+.em-3 {
+	font-size: 3em;
+}
+
+.em-4 {
+	font-size: 4em;
+}
+
+.em-5 {
+	font-size: 5em;
+}
+
+.em-6 {
+	font-size: 6em;
+}
+
+.em-7 {
+	font-size: 7em;
+}
+
+.em-8 {
+	font-size: 8em;
+}
+
+.em-9 {
+	font-size: 9em;
+}
+
+.em-10 {
+	font-size: 10em;
+}
+
+.em-11 {
+	font-size: 11em;
+}
+
+.em-12 {
+	font-size: 12em;
+}
+
+.em-13 {
+	font-size: 13em;
+}
+
+.em-14 {
+	font-size: 14em;
+}
+
+.font-weight-100 {
+	font-weight: 100;
+}
+
+.font-weight-300 {
+	font-weight: 300;
+}
+
+.font-weight-500 {
+	font-weight: 500;
+}
+
+.font-weight-700 {
+	font-weight: 700;
+}
+
+.font-weight-900 {
+	font-weight: 900;
+}
+
+.font-italic {
+	font-style: italic;
+}
+
+.font-smallcaps {
+	font-variant: small-caps;
+}
+
+.display-inline {
+	display: inline;
+}
+
+.display-inlineblock {
+	display: inline-block;
+}
+
+.display-block {
+	display: block;
+}
+
+.display-none {
+	display: none;
+}
+
+.position-relative {
+	position: relative;
+}
+
+.position-absolute {
+	position: absolute;
+}
+
+.position-fixed {
+	position: fixed;
+}
+
+.top-0 {
+	top: 0;
+}
+
+.right-0 {
+	right: 0;
+}
+
+.bottom-0 {
+	bottom: 0;
+}
+
+.left-0 {
+	left: 0;
+}
+
+.float-left {
+	float: left;
+}
+
+.float-right {
+	float: right;
+}
+
+.float-none {
+	float: none;
+}
+
+.visibility-hidden {
+	visibility: hidden;
+}
+
+.overflow-hidden {
+	overflow: hidden;
+}
+
+.overflow-scroll {
+	overflow: scroll;
+}
+
+.overflow-auto {
+	overflow: auto;
+}
+
+.margin-auto {
+	margin: auto;
+}
+
+.margin-0 {
+	margin: 0;
+}
+
+.margin-bottom-em-2 {
+	margin-bottom: 2em;
+}
+
+.margin-top-0 {
+	margin-top: 0;
+}
+
+.margin-top-em-1 {
+	margin-top: 1em;
+}
+
+.padding-0 {
+	padding: 0;
+}
+
+.padding-em-1 {
+	padding: 1em;
+}
+
+.padding-em-2 {
+	padding: 2em;
+}
+
+.padding-top-0 {
+	padding-top: 0;
+}
+
+.padding-left-right-2 {
+	padding-left: 2em;
+	padding-right: 2em;
+}
+
+.padding-bottom-em-1 {
+	padding-bottom: 1em;
+}
+
+.width-10vw {
+	width: 10vw;
+}
+
+.width-20vw {
+	width: 20vw;
+}
+
+.width-30vw {
+	width: 30vw;
+}
+
+.width-40vw {
+	width: 40vw;
+}
+
+.width-33-pct {
+	width: 33%;
+}
+
+.width-49-pct {
+	width: 49%;
+}
+
+.width-66-pct {
+	width: 66%;
+}
+
+.max-width-33-pct {
+	max-width: 33%;
+}
+
+.max-width-49-pct {
+	max-width: 49%;
+}
+
+.max-width-66-pct {
+	max-width: 66%;
+}
+
+.max-width-100-pct {
+	max-width: 100%;
+}
+
+.height-100-pct {
+	height: 100%;
+}
+
+.max-height-100-pct {
+	max-height: 100%;
+}
+
+.height-em-3 {
+	height: 3em;
+}
+
+.height-em-4 {
+	height: 4em;
+}
+
+.height-em-5 {
+	height: 5em;
+}
+
+.z-index-minus-1 {
+	z-index: -1;
+}
+
+.z-index-plus-1 {
+	z-index: 1;
+}
+
+.list-style-type-none {
+	list-style-type: none;
+}
+
+.background-transparent {
+	background: transparent;
+}
+
+/* Navigation */
+
+#header-logo {
+	height: 100%;
+	width: auto;
+}
+
+.navbar {
+  	min-height: 75px;
+	border-bottom: 1px solid #fcbc03;
+	background: #ffffff;
+}
+
+.navbar-brand {  
+  	height: 75px;
+}
+
+.navbar-nav {
+  	margin: 7.5px 1em;
+	font-size: 1.1em;
+	font-weight: 300;
+}
+
+.navbar-nav > li > a {
+  	padding-top: 15px;
+  	padding-bottom: 15px;
+  	line-height: 30px;
+}
+
+.navbar-default .navbar-nav > li > a {
+  	color: #000000;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  	color: #fcbc03;
+  	background-color: transparent;
+	transition: 0.2s;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  	color: #fcbc03;
+	background: transparent;
+}
+
+/* Footer */
+
+.footer-background {
+	background-color: #cccccc;	
+}
+
+.footer-padding {
+	padding: 2em 0;
+}
+
+#footer-logo {
+	max-width: 66%;
+	margin-top: 2em;
+}
+
+.footer-kontakt {
+	padding-left: 10%;
+}
+
+.sociale-medier-logo {
+	max-width: 20%;
+	margin: 5% 0 0 10%;
+}
+
+#footer-copyright {
+	font-size: 0.75em;
+	margin-left: 9em;
+}
+
+/* Forside Header */
+
+.forside-video {
+	max-width: 100%;
+	width: auto;
+	height: auto;
+	position: relative;
+	top: -110px;
+}
+
+@media only screen and (max-width: 767px) {
+	.forside-video {
+		width: auto;
+		max-width: 200%;
+		min-height: 100%;
+		height: auto;
+		position: absolute;
+		top: -20%;
+		left: -50%;
+	}
+}
+
+#forside-overskrift {
+	position: absolute;
+	top: 14em;
+}
+
+@media only screen and (max-width: 767px) {
+	#forside-overskrift {
+	position: absolute;
+	top: 3em;
+	}
+}
+
+#forside-header-baggrund {
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.forside-header-p {
+	width: 49%;
+	font-size: 0.9em;
+	margin: 0.35em 0;
+	padding: 0.1em 0;
+}
+
+/* Forside Fadøl */
+
+.forside-humlekogler {
+	max-width: 7em;
+	position: relative;
+	top: -10em;
+}
+
+@media only screen and (max-width: 1250px) {
+	.forside-humlekogler {
+		display: none;
+	}
+}
+
+/* Forside Events */
+
+#card {
+	margin-bottom: 1em;
+}
+
+.forside-event-h1 {
+	margin: 0.1em 0 0 0;
+}
+
+.forside-event-hr-1 {
+	margin: 0.2em 0 0 0;
+	border-bottom: 1px solid #959595;
+}
+
+.forside-event-hr-2 {
+	margin: -1.4em 0 0 0;
+	border-bottom: 1px solid #959595;
+}
+
+.forside-event-time-1 {
+	margin: -0.2em 0 0 0;
+}
+
+.forside-event-time-2 {
+	margin: -0.9em 0 0 0;
+}
+
+.forside-event-button {
+	top: -2.2em;
+	left: 0.8em;
+	width: 60%;
+	padding: 1.2em 0;
+	color: #fcbc03;
+	border: 3px solid #fcbc03;
+}
+
+.forside-event-button:hover,
+.forside-event-button:active,
+.forside-event-button:focus {
+	color: #ffffff;
+	border: 3px solid #fcbc03;
+	background: #fcbc03;
+	transition: 0.2s;
+}
+
+/* Forside Nyheder */
+
+.forside-nyheder-row {
+	max-height: 11em;
+}
+
+@media only screen and (max-width: 767px) {
+	.forside-nyheder-row {
+		max-height: none;
+	}
+}
+
+.forside-nyheder-dato {
+	top: -0.25em;
+	font-size: 12em;
+}
+
+@media only screen and (max-width: 1199px) {
+	.forside-nyheder-dato {
+		top: -0.25em;
+		font-size: 10em;
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	.forside-nyheder-dato {
+		top: 0;
+		font-size: 7em;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.forside-nyheder-dato {
+		top: 0;
+		font-size: 5em;
+	}
+}
+
+.forside-nyheder-måned {
+	top: 0.5em;
+	font-size: 2em;
+}
+
+@media only screen and (max-width: 1199px) {
+	.forside-nyheder-måned {
+		top: 0.5em;
+		font-size: 1.7em;
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	.forside-nyheder-måned {
+		top: 1em;
+		font-size: 1.5em;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.forside-nyheder-måned {
+		top: 1.2em;
+		font-size: 1.2em;
+	}
+}
+
+.forside-nyheder-logo {
+	max-width: 40%;
+	margin-top: 2em;
+}
+
+/* Forside Wifi / Opladere */
+
+#forside-wifi {
+	background: #cccccc;
+	padding: 4em 0 2em;
+	margin-top: 3em;
+}
+
+#forside-wifi p {
+	font-size: 1.2em;
+}
+
+#bærbare {
+	max-width: 49.4%;
+}
+
+#wifi {
+	max-width: 35%;
+}
+
+#smartphones {
+	max-width: 17.9%;
+}
+
+/* Forside Menu */
+
+.forside-menu {
+	padding: 0 4em;
+	min-height: 29em;
+	height: auto;
+}
+
+@media only screen and (max-width: 991px) {
+	.forside-menu ul {
+		margin-bottom: 7em;
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	.forside-menu {
+		min-height: 0;
+		height: auto;
+	}
+}
+
+.forside-menu-tilbud {
+	background: #fcbc03;
+	padding: 1em 1em 2em;
+	width: 80%;
+	max-height: 4em;
+	clear: both;
+}
+
+.forside-menu-tilbud {
+	font-size: 1.1em;
+}
+
+@media only screen and (max-width: 991px) {
+	.forside-menu-tilbud {
+	margin-top: 1.5em;
+	}
+}
+
+.forside-menu-tilbud p#tilbud1 {
+	margin-top: 0.3em;
+}
+
+/* Specialøl */
+
+#specialøl-padding1 {
+	padding: 5em;
+}
+
+#specialøl-img1 {
+	max-width: 27%;
+	height: auto;
+}
+
+#specialøl-img2 {
+	max-width: 60%;
+	height: auto;
+}
+
+.specialøl-øltyper {
+	min-height: 32em;
+	height: auto;
+}
+
+.special-øvet {
+	min-height: 20em;
+	height: auto;
+}
+
+.specialøl-glas {	
+	max-width: 40%;
+	height: auto;
+	margin-bottom: 1em;
+}
+
+@media only screen and (max-width: 991px) {
+	.specialøl-glas {
+		max-width: 10%;
+		height: auto;
+		margin-bottom: 1em;
+}
+}
+
+.specialøl-baggrund1 {
+	background: #646464;
+}
+
+.specialøl-baggrund2 {
+	background: #b4b4b4;
+}
+
+#specialøl-book-img {
+	max-width: 90%;
+	height: auto;
+}
+
+#specialøl-fairbajer {
+	max-width: 90%;
+	height: auto;
+}
+
+.specialøl-ølogmad-div1 {
+	max-width: 10vw;
+}
+
+@media only screen and (max-width: 767px) {
+	.specialøl-ølogmad-div1 {
+		max-width: 45vw;
+	}
+	.specialøl-ølogmad-div1 img {
+		max-width: 30%;
+		display: block;
+		margin: 1em auto 0;
+	}
+}
+
+.specialøl-ølogmad-div2 {
+	max-width: 20vw;
+}
+
+@media only screen and (max-width: 767px) {
+	.specialøl-ølogmad-div2 {
+		max-width: 45vw;
+	}
+}
+
+.specialøl-ølogmad-div3 {
+	max-width: 30vw;
+}
+
+@media only screen and (max-width: 767px) {
+	.specialøl-ølogmad-div3 {
+		max-width: 45vw;
+		padding-top: 1em;
+	}
+}
+
+.specialøl-ølogmad-div4 {
+	max-width: 30vw;
+}
+
+@media only screen and (max-width: 767px) {
+	.specialøl-ølogmad-div4 {
+		max-width: 45vw;
+	}
+}
+
+.specialøl-ølogmad-p {
+	font-size: 1.2em;
+}
+
+/* Specialøl Accordion */
+
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #ddd; 
+}
+
+div.panel {
+    display: none;
+	background: transparent;
+}
+
+div.panel.show {
+    display: block;
+}
+
+/* Events */
+
+#events {
+	background-color: beige;
+}
+
+.event {
+	width: 32.9%;
+	height: 33%;
+	margin: 1em 0 0 0;
+}
+
+.event img {
+	height: auto;
+	width: 90%;
+	margin:  auto;
+}
+
+.event p {
+	padding: 1.5em;
+	text-align:  justify;
+}
+
+/* Bliv frivillig */
+
+
+.frivillig-video {
+	max-width: 100%;
+	width: auto;
+	height: auto;
+	position: relative;
+	top: -110px;
+}
+
+@media only screen and (max-width: 767px) {
+	.frivillig-video {
+		width: auto;
+		max-width: 200%;
+		min-height: 100%;
+		height: auto;
+		position: absolute;
+		top: -20%;
+		left: -50%;
+	}
+}
+
+#frivillig-overskrift {
+	position: absolute;
+	top: 22em;
+}
+
+@media only screen and (max-width: 767px) {
+	#frivillig-overskrift {
+		position: absolute;
+		top: 5em;
+	}
+}
+
+.frivillig-padding-1 {
+	padding: 0 2em;
+}
+
+.frivillig-billeder {
+	max-width: 30%;
+}
+
+.frivillig-padding-2 {
+	padding: 0 4em;
+}
+
+.frivillig-p {
+	font-size: 1.3em;
+}
+
+/* Musiker */
+
+#musiker-header {
+	background-image: url(../images/musiker_header.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	height: 100%;
+	padding-top: 12em;
+}
+
+#musiker-overskrift {
+	position: absolute;
+	top: 14em;
+}
+
+/* Støtteprojektet */
+
+#støtteprojektet-header {
+	background-image: url(../images/støtteprojektet_header.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	height: 100%;
+	padding-top: 12em;
+}
+
+#støtteprojektet-button {
+	font-size: 1.5em;
+}
+
+.støtteprojektet-padding {
+	padding: 0 2em;
+}
+
+/* Om Os */
+
+#om-os-header {
+	background-image: url(../images/omos_header.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	height: 100%;
+	padding-top: 12em;
+}
+
+.om-os-padding {
+	padding: 2em 2em 2em 12em;
+}
+
+/* Kontakt */
+
+.kontakt {
+	padding: 2em 0;
+	min-height: 25em;
+	border-bottom: 1px solid #cccccc;
+	margin-bottom: 1em;
+}
+
+.kontakt p {
+	font-size: 1.1em;
+}
+
+.kontakt-billeder {
+	max-width: 30%;
+	height: auto;
+}
+
+/* Mail */
+
+#mail {
+	display: block;
+	margin: auto;
+	font-size: 2em;
+	min-height: 50vh;
+	padding: 5em;
+}
